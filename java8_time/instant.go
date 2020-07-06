@@ -18,8 +18,8 @@
 package java8_time
 
 type Instant struct {
-	Second int64 `hessian:"second"`
-	Nano int32 `hessian:"nano"`
+	Seconds int64 `hessian:"seconds"`
+	Nanos int32 `hessian:"nanos"`
 }
 
 
@@ -28,5 +28,5 @@ func (Instant) JavaClassName() string {
 }
 
 func (Instant) Error() string {
-	return "encode localTime error"
+	return "encode instant error"
 }
