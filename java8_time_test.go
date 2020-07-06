@@ -24,8 +24,10 @@ import (
 )
 
 func TestJava8Time(t *testing.T) {
-
+	//test java8-time
 	doTestJava8Time(t, "java8_Year", java8_time.Year{Year: 2020})
+	doTestJava8Time(t, "java8_YearMonth", java8_time.YearMonth{Year: 2020, Month: 6})
+	doTestJava8Time(t, "java8_Period", java8_time.Period{Years: 2020, Months: 6, Days: 6})
 }
 
 func doTestJava8Time(t *testing.T, method string, pojo POJO) {
