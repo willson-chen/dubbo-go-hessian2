@@ -18,11 +18,10 @@
 package java8_time
 
 type LocalDate struct {
-	Year int32 `hessian:"year"`
+	Year  int32 `hessian:"year"`
 	Month int32 `hessian:"month"`
-	Day int32 `hessian:"day"`
+	Day   int32 `hessian:"day"`
 }
-
 
 func (LocalDate) JavaClassName() string {
 	return "com.alibaba.com.caucho.hessian.io.java8.LocalDateHandle"

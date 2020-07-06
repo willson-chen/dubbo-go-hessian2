@@ -14,11 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package java8_time
 
 type Duration struct {
 	Second int64 `hessian:"second"`
-	Nano int32 `hessian:"nano"`
+	Nano   int32 `hessian:"nano"`
 }
 
 func (Duration) JavaClassName() string {

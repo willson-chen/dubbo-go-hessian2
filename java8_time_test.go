@@ -25,7 +25,9 @@ import (
 
 func TestJava8Time(t *testing.T) {
 
+	//use go decode java data(data from java encode byte[])
 	doTestTime(t, "java8_Year", &java8_time.Year{Year: 2020})
+	//use go and java encode, compare the encode results(string) of java and go
 	doTestJava8Time(t, "java8_Year", java8_time.Year{Year: 2020})
 	doTestTime(t, "java8_LocalDate", &java8_time.LocalDate{Year: 2020, Month: 6, Day: 6})
 	doTestTime(t, "java8_LocalTime", &java8_time.LocalTime{Hour: 6, Minute: 6})

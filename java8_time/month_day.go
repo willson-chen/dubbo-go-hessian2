@@ -19,7 +19,7 @@ package java8_time
 
 type MonthDay struct {
 	Month int32 `hessian:"month"`
-	Day int32 `hessian:"day"`
+	Day   int32 `hessian:"day"`
 }
 
 func (MonthDay) JavaClassName() string {

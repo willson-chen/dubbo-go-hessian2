@@ -19,9 +19,8 @@ package java8_time
 
 type Instant struct {
 	Seconds int64 `hessian:"seconds"`
-	Nanos int32 `hessian:"nanos"`
+	Nanos   int32 `hessian:"nanos"`
 }
-
 
 func (Instant) JavaClassName() string {
 	return "com.alibaba.com.caucho.hessian.io.java8.InstantHandle"
