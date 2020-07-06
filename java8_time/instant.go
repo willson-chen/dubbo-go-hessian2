@@ -17,15 +17,16 @@
 
 package java8_time
 
-type LocalDateTime struct {
-	Date LocalDate `hessian:"date"`
-	Time LocalTime `hessian:"time"`
+type Instant struct {
+	Second int64 `hessian:"second"`
+	Nano int32 `hessian:"nano"`
 }
 
-func (LocalDateTime) JavaClassName() string {
-	return "com.alibaba.com.caucho.hessian.io.java8.LocalDateTimeHandle"
+
+func (Instant) JavaClassName() string {
+	return "com.alibaba.com.caucho.hessian.io.java8.InstantHandle"
 }
 
-func (LocalDateTime) Error() string {
-	return "encode localDateTime error"
+func (Instant) Error() string {
+	return "encode localTime error"
 }

@@ -14,18 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package java8_time
 
-type LocalDateTime struct {
-	Date LocalDate `hessian:"date"`
-	Time LocalTime `hessian:"time"`
+type Duration struct {
+	Second int64 `hessian:"second"`
+	Nano int32 `hessian:"nano"`
 }
 
-func (LocalDateTime) JavaClassName() string {
-	return "com.alibaba.com.caucho.hessian.io.java8.LocalDateTimeHandle"
+func (Duration) JavaClassName() string {
+	return "com.alibaba.com.caucho.hessian.io.java8.DurationHandle"
 }
 
-func (LocalDateTime) Error() string {
-	return "encode localDateTime error"
+func (Duration) Error() string {
+	return "encode localTime error"
 }

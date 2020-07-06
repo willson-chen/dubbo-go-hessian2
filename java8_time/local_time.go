@@ -17,15 +17,12 @@
 
 package java8_time
 
-
-
 type LocalTime struct {
 	Hour int32 `hessian:"hour"`
 	Minute int32 `hessian:"minute"`
 	Second int32 `hessian:"second"`
 	Nano int32 `hessian:"nano"`
 }
-
 
 func (LocalTime) JavaClassName() string {
 	return "com.alibaba.com.caucho.hessian.io.java8.LocalTimeHandle"

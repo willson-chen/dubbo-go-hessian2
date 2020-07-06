@@ -17,15 +17,15 @@
 
 package java8_time
 
-type LocalDateTime struct {
-	Date LocalDate `hessian:"date"`
-	Time LocalTime `hessian:"time"`
+type MonthDay struct {
+	Month int32 `hessian:"month"`
+	Day int32 `hessian:"day"`
 }
 
-func (LocalDateTime) JavaClassName() string {
-	return "com.alibaba.com.caucho.hessian.io.java8.LocalDateTimeHandle"
+func (MonthDay) JavaClassName() string {
+	return "com.alibaba.com.caucho.hessian.io.java8.MonthDayHandle"
 }
 
-func (LocalDateTime) Error() string {
-	return "encode localDateTime error"
+func (MonthDay) Error() string {
+	return "encode localTime error"
 }
