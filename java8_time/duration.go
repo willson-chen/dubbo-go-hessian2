@@ -27,5 +27,5 @@ func (Duration) JavaClassName() string {
 }
 
 func (Duration) Error() string {
-	return "encode localTime error"
+	return "encode Duration error"
 }

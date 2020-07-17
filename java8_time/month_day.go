@@ -27,5 +27,5 @@ func (MonthDay) JavaClassName() string {
 }
 
 func (MonthDay) Error() string {
-	return "encode localTime error"
+	return "encode MonthDay error"
 }

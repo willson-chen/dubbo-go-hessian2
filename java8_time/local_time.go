@@ -29,5 +29,5 @@ func (LocalTime) JavaClassName() string {
 }
 
 func (LocalTime) Error() string {
-	return "encode localTime error"
+	return "encode LocalTime error"
 }

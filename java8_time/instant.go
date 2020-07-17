@@ -27,5 +27,5 @@ func (Instant) JavaClassName() string {
 }
 
 func (Instant) Error() string {
-	return "encode instant error"
+	return "encode Instant error"
 }
