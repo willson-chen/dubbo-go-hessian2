@@ -19,15 +19,6 @@ package test;
 
 import java.time.*;
 
-/**
- * date 2020/7/2 11:07 <br/>
- * description class <br/>
- * add java8 package java.time Object method
- *
- * @author zhangyanmingjiayou@163.com
- * @version 1.0
- * @since 1.0
- */
 public class TestJava8Time {
 
     public static Duration java8_Duration() {
